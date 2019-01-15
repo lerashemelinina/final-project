@@ -1,0 +1,43 @@
+<div class="container">
+  <table class="table table-bordered">
+    <tr>
+       <th>Image</th>
+       <th>Full Name</th>
+       <th>Birth Day</th>
+       <th>Identity Number</th>
+       <th>Is Male</th>
+       <th>Role</th>
+       <th>User Name</th>
+       <th>Email</th>
+       <th>Password</th>
+       <th colspan="2">Make changes</th>
+    </tr>
+    
+    <tr *ngFor="let user of allUsers.userList">
+        <td><img src="data:image/jpeg;base64,{{user.Image}}" height="100px" width="140px"></td>
+        <td>{{user.FullName}}</td>
+        <td>{{user.BirthDate | date}}</td>
+        <td>{{user.IdentityNumber}}</td>
+        <td>{{user.IsMale}}</td>
+        <td>{{user.UserRole}}</td>
+        <td>{{user.UserName}}</td>
+        <td>{{user.Email}}</td>
+        <td>{{user.Password}}</td>
+        <td><a class="btn btn-primary" routerLink="/editUser/{{user.UserName}}">Edit</a></td>
+        <td><a class="btn btn-primary" (click)="deleteUser(user.UserName)">Delete</a></td>
+    </tr>
+  
+  </table>
+  </div>
+  
+  <a class="btn btn-primary" routerLink="/addUser/{{userRole}}">Add new User</a>
+
+
+
+
+
+ 
+ 
+
+
+  

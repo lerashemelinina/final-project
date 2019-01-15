@@ -1,0 +1,72 @@
+<div class="container">
+    <form #form="ngForm">
+
+  <div class="well well-lg" *ngIf="actionMsg">{{actionMsg}}</div>
+  
+  <div class="form-group" [class.has-error]="make.invalid&&make.touched">
+    <label class="control-label">Make:</label>
+    <input type="text" class="form-control"  placeholder="Enter a Make" 
+           [(ngModel)]="newCarType.Make" required #make="ngModel"
+           name="make">
+  </div>
+
+  <div class="form-group" [class.has-error]="model.invalid&&model.touched">
+      <label class="control-label">Model:</label>
+      <input type="text" class="form-control"  placeholder="Enter Model"  
+             [(ngModel)]="newCarType.Model" required #model="ngModel"
+             name="model">
+    </div>
+
+
+    <div class="form-group" [class.has-error]="price.invalid&&price.touched">
+      <label class="control-label">Price:</label>
+      <input type="number" class="form-control"  placeholder="Enter Price"  
+             [(ngModel)]="newCarType.Price" required #price="ngModel"
+             name="price">
+    </div>
+
+
+    <div class="form-group" [class.has-error]="delayCharge.invalid&&delayCharge.touched">
+      <label class="control-label">DelayCharge:</label>
+      <input type="number" class="form-control"  placeholder="Enter Delay Charge"  
+             [(ngModel)]="newCarType.DelayCharge" required #delayCharge="ngModel"
+             name="delayCharge">
+    </div>
+
+    
+
+<div class="form-group" [class.has-error]="isYearError">
+  <label class="control-label">Year:</label>
+    <select class="form-control" 
+      required #year
+      name="year"
+      [(ngModel)]="newCarType.Year"
+      (blur)="validateYear(year.value)"
+      (change)="validateYear(year.value)">
+      <option value="default">Select year</option>
+      <option *ngFor="let year of years" >{{year}}</option>
+   </select>
+</div>
+
+
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" name="isAutomatic" 
+      [(ngModel)]="newCarType.IsAutomatic"> Automatic
+    </label>
+  </div>
+  
+
+  <button class="btn btn-default" (click)="saveChanges()"
+          [disabled]="form.invalid">Submit</button>
+
+  <button class="btn btn-default" (click)="onBack()">Back</button>
+
+</form>
+
+</div>
+
+
+
+ 
+

@@ -1,0 +1,70 @@
+
+<div class="container">
+<table class="table table-bordered">
+  <tr>
+     <th>Make</th>
+     <th>Model</th>
+     <th>Price</th>
+     <th>Delay charge</th>
+     <th>Year</th>
+     <th>Automatic Transmission</th>
+     <th colspan="2">Make changes</th>
+  </tr>
+  
+  <tr *ngFor="let carType of allCarTypes.carTypeList">
+      <td>{{carType.Make}}</td>
+      <td>{{carType.Model}}</td>
+      <td>{{carType.Price}}</td>
+      <td>{{carType.DelayCharge}}</td>
+      <td>{{carType.Year}}</td>
+      <td>{{carType.IsAutomatic}}</td>
+      <td><a class="btn btn-primary" routerLink="/editCarType/{{carType.Make}}/{{carType.Model}}/{{carType.Year}}">Edit</a></td>
+      <td><a class="btn btn-primary" (click)="deleteCarType(carType.Make, carType.Model, carType.Year)">Delete</a></td>
+  </tr>
+
+</table>
+
+<a class="btn btn-primary" routerLink="/addCarType">Add new CarType</a>
+
+
+</div>
+
+
+
+
+<!-- <div class="container">
+    <h1>Our Cars:</h1>
+  
+    <div class="well well-lg" *ngIf="actionMsg">{{actionMsg}}</div>
+  
+    <hr/>
+    <a class="btn btn-primary" routerLink="/addBook">Add new CarType</a>
+    <hr/>
+    <div class="row">
+  
+        <div class="col-md-3 book-container" *ngFor="let carType of allCarTypes.carTypeList">
+            <div class="thumbnail">
+  
+                <div class="caption">
+  
+                    <h2>{{carType.Make}}</h2>
+                    <hr/>
+                 
+                    <p>Model: {{carType.Model}}</p>
+                    <p>Cost per day:
+                        <span>{{carType.Price}}</span>
+                    </p>
+  
+                    <p>
+                      <!-- <a class="btn btn-primary" routerLink="/editBook/{{book.BookName}}">Edit Book</a>
+                      <a class="btn btn-primary" routerLink="/book"  (click)="showBook(book.BookName)">Show details</a>
+                      <a class="btn btn-primary" (click)="deleteBook(book.BookName)">Delete Book</a> -->
+                  <!-- </p>
+                </div>
+            </div>
+        </div>
+  
+    </div>
+  </div> --> -->
+
+

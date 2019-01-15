@@ -1,0 +1,18 @@
+C:\Users\lerapc\source\repos\DAL\02_BOL\obj\Debug\02_BOL.csprojResolveAssemblyReference.cache
+C:\Users\lerapc\source\repos\DAL\02_BOL\obj\Debug\02_BOL.csproj.CoreCompileInputs.cache
+C:\Users\lerapc\source\repos\DAL\02_BOL\bin\Debug\02_BOL.dll
+C:\Users\lerapc\source\repos\DAL\02_BOL\bin\Debug\02_BOL.pdb
+C:\Users\lerapc\source\repos\DAL\02_BOL\obj\Debug\02_BOL.dll
+C:\Users\lerapc\source\repos\DAL\02_BOL\obj\Debug\02_BOL.pdb
+C:\Users\lerapc\source\repos\Car RentProject\02_BOL\obj\Debug\02_BOL.csproj.CoreCompileInputs.cache
+C:\Users\lerapc\source\repos\Car RentProject\02_BOL\obj\Debug\02_BOL.dll
+C:\Users\lerapc\source\repos\Car RentProject\02_BOL\obj\Debug\02_BOL.pdb
+C:\Users\lerapc\source\repos\Car RentProject\02_BOL\bin\Debug\02_BOL.dll
+C:\Users\lerapc\source\repos\Car RentProject\02_BOL\bin\Debug\02_BOL.pdb
+C:\Users\lerapc\source\repos\Car RentProject\02_BOL\obj\Debug\02_BOL.csprojResolveAssemblyReference.cache
+C:\Users\lerapc\source\repos\CarRentProject\02_BOL\bin\Debug\02_BOL.dll
+C:\Users\lerapc\source\repos\CarRentProject\02_BOL\bin\Debug\02_BOL.pdb
+C:\Users\lerapc\source\repos\CarRentProject\02_BOL\obj\Debug\02_BOL.csprojResolveAssemblyReference.cache
+C:\Users\lerapc\source\repos\CarRentProject\02_BOL\obj\Debug\02_BOL.csproj.CoreCompileInputs.cache
+C:\Users\lerapc\source\repos\CarRentProject\02_BOL\obj\Debug\02_BOL.dll
+C:\Users\lerapc\source\repos\CarRentProject\02_BOL\obj\Debug\02_BOL.pdb

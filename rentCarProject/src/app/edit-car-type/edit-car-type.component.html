@@ -1,0 +1,34 @@
+<div class="container">
+
+  <div class="well well-lg" *ngIf="actionMsg">{{actionMsg}}</div>
+  
+  <div class="form-group">
+    <label>Make:</label>
+    <input type="text" class="form-control" [(ngModel)]="localCarType.Make">
+  </div>
+  <div class="form-group">
+      <label>Model:</label>
+      <input type="text" class="form-control" [(ngModel)]="localCarType.Model">
+    </div>
+    <div class="form-group">
+      <label>Price:</label>
+      <input type="number" class="form-control"  [(ngModel)]="localCarType.Price">
+    </div>
+    <div class="form-group">
+      <label>DelayCharge:</label>
+      <input type="number" class="form-control" [(ngModel)]="localCarType.DelayCharge">
+    </div>
+    <div class="form-group">
+      <label>Year:</label>
+      <input type="number" class="form-control"  [(ngModel)]="localCarType.Year">
+    </div>
+    <div class="form-group">
+      <label>IsAutomatic:</label>
+      <input type="text" class="form-control" [(ngModel)]="localCarType.IsAutomatic">
+    </div>
+
+
+  <button class="btn btn-default" (click)="saveChanges()">Submit</button>
+  <button class="btn btn-default" (click)="onBack()">Back</button>
+
+</div>

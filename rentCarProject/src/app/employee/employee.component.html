@@ -1,0 +1,44 @@
+
+<div class="container">
+<div class="form-group">
+  <h1>This is an employee area!</h1>
+  <label class="control-label">Select a car number for return:</label>
+    <select class="form-control" [(ngModel)]="carNumber">
+      <option value="default">Select an option</option>
+      <option *ngFor="let car of allCars.carList">{{car.CarNumber}}</option>
+    </select>
+</div>
+<button class="btn btn-default" (click)="onSubmit()">Submit</button>
+</div>
+
+
+<div class="container" *ngIf="filteredOrders&&filteredOrders[0]">
+  <table class="table table-bordered">
+    <tr>
+       <th>Car Type </th>
+       <th>Car Number</th>
+       <th>User Name</th>
+       <th>User Id</th>
+       <th>Start Date</th>
+       <th>End Date</th>
+       <th>Return Date</th>
+       <th colspan="2">Make changes</th>
+    </tr>
+    
+   
+    <tr *ngFor="let order of filteredOrders">
+        <td>{{order.Car.CarType.Make}}, {{order.Car.CarType.Model}}</td>
+        <td>{{order.Car.CarNumber}}</td>
+        <td>{{order.User.FullName}}</td>
+        <td>{{order.User.IdentityNumber}}</td>
+        <td>{{order.StartRent | date}}</td>
+        <td>{{order.EndRent | date}}</td>
+        <td>{{order.ReturnDate | date}}</td>
+        <td><a class="btn btn-primary" routerLink="/editOrder/{{order.Car.CarNumber}}/{{order.StartRent}}/{{userRole}}">Edit</a></td>    
+    </tr>
+
+  </table>
+  </div>
+
+
+  

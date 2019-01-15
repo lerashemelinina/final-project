@@ -1,0 +1,32 @@
+<div class="container">
+  <table class="table table-bordered">
+    <tr>
+       <th>Car Type </th>
+       <th>Car Number</th>
+       <th>User Name</th>
+       <th>User Id</th>
+       <th>Start Date</th>
+       <th>End Date</th>
+       <th>Return Date</th>
+       <th colspan="2">Make changes</th>
+    </tr>
+    
+    <tr *ngFor="let order of allOrders.orderList">
+        <td>{{order.Car.CarType.Make}}, {{order.Car.CarType.Model}}</td>
+        <td>{{order.Car.CarNumber}}</td>
+        <td>{{order.User.FullName}}</td>
+        <td>{{order.User.IdentityNumber}}</td>
+        <td>{{order.StartRent | date: 'shortDate'}}</td>
+        <td>{{order.EndRent | date: 'shortDate'}}</td>
+        <td>{{order.ReturnDate | date: 'shortDate'}}</td>
+        <td><a class="btn btn-primary" routerLink="/editOrder/{{order.Car.CarNumber}}/{{order.StartRent}}/{{userRole}}">Edit</a></td>
+        <td><a class="btn btn-primary" (click)="deleteOrder(order.StartRent, order.Car.CarNumber)">Delete</a></td>
+    </tr>
+  
+  </table>
+  </div>
+  
+  <a class="btn btn-primary" routerLink="/addOrder">Add Order</a>
+
+ 
+

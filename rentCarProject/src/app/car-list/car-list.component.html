@@ -1,0 +1,46 @@
+<div class="container">
+  <table class="table table-bordered" >
+    <tr>
+       <th>Image</th>
+       <th>Car Type Info</th> 
+       <th>Mileage</th>
+       <th>Branch Info</th>
+       <th>Car Number</th>
+       <th colspan="3">Make changes</th>
+    </tr>
+    
+    <tr *ngFor="let car of allCars.carList">
+        <td><img src="data:image/jpeg;base64,{{car.Image}}" height="100px" width="140px"></td>
+        <td>{{car.CarType.Make}}, {{car.CarType.Model}}, {{car.CarType.Year}}</td>
+        <td>{{car.Mileage}}</td>
+        <td>{{car.Branch.BranchName}}, {{car.Branch.Adress}}</td>
+        <td>{{car.CarNumber}}</td>
+
+        <td><a class="btn btn-primary"
+              routerLink="/editCar/{{car.CarNumber}}" 
+              *ngIf="user=='manager'">Edit</a>
+        </td>
+
+        <td><a class="btn btn-primary" 
+              (click)="deleteCar(car.CarNumber)" 
+              *ngIf="user=='manager'">Delete</a>
+        </td>
+
+        <td><a class="btn btn-primary" 
+              (click)="saveCar(car)"
+              routerLink="/signIn"
+              *ngIf="user=='guest'">Make order</a>
+        </td>
+
+    </tr>
+  
+  </table>
+
+  <a class="btn btn-primary" routerLink="/addCar" *ngIf="user=='manager'">Add new Car</a>
+ 
+
+  </div>
+
+
+ 
+

@@ -1,0 +1,96 @@
+<div class="container">
+    <form #form="ngForm" novalidate>
+
+  <div class="well well-lg" *ngIf="actionMsg">{{actionMsg}}</div>
+  
+  <div class="form-group" [class.has-error]="fullName.invalid&&fullName.touched">
+    <label class="control-label">Full Name:</label>
+    <input type="text" class="form-control"  placeholder="Enter Full Namer" 
+           [(ngModel)]="newUser.FullName" required #fullName="ngModel"
+           name="fullName" >
+  </div>
+
+
+  <div class="form-group" [class.has-error]="identityNumber.invalid&&identityNumber.touched">
+      <label class="control-label">Identity Number:</label>
+      <input type="text" class="form-control"  placeholder="Enter Identity Number"  
+             [(ngModel)]="newUser.IdentityNumber" required #identityNumber="ngModel"
+             name="identityNumber">
+    </div>
+
+
+    <div class="form-group" [class.has-error]="birthDate.invalid&&birthDate.touched">
+      <label class="control-label">Birth Date:</label>
+      <input type="date" class="form-control"  placeholder="Enter Birth Date"  
+              [(ngModel)]="newUser.BirthDate" required #birthDate="ngModel"
+              name="birthDate">
+    </div>
+
+
+    <div class="form-group" [class.has-error]="userName.invalid&&userName.touched">
+      <label class="control-label">User Name:</label>
+      <input type="text" class="form-control"  placeholder="Enter User Name"  
+            [(ngModel)]="newUser.UserName" required #userName="ngModel"
+            name="userName">
+    </div>
+
+
+    <div class="checkbox">
+        <label>
+          <input type="checkbox" name="IsMale" 
+          [(ngModel)]="newUser.IsMale"> Male
+        </label>
+      </div>
+
+
+    <div class="form-group">
+      <label>Email:</label>
+      <input type="text" class="form-control"
+             placeholder="Enter Email"  [(ngModel)]="newUser.Email"
+             name="email">
+    </div>
+
+
+    <div class="form-group">
+      <label>Password:</label>
+      <input type="text" class="form-control"  
+             placeholder="Enter a Password"  [(ngModel)]="newUser.Password"
+             name="password">
+    </div>
+
+    <div *ngIf="notGuest">
+    <div class="form-group"  [class.has-error]="isUserRoleError">
+      <label class="control-label">User Role:</label>
+      <select class="form-control"
+              required #userRole
+              name="userRole"
+              (blur)="validateUserRole(userRole.value)"
+              (change)="validateUserRole(userRole.value)"
+              [(ngModel)]="newUser.UserRole">
+      <option value="default">Select user role</option>
+      <option *ngFor="let userRole of userRoleOptions">{{userRole}}</option>
+      </select>
+    </div>
+  </div>
+
+
+    <div>
+        <input type="file" #image accept="image/*"  
+         ngModel
+         name="image"
+         (change)="handleFileInput($event.target.files)">
+        <img *ngIf="imageUrl" [src]="imageUrl" style="width:250px;height:200px;display:block;">
+      </div>
+
+
+  <button class="btn btn-default" (click)="saveChanges()"
+        [disabled]="form.invalid">
+        Submit
+      </button>
+
+  <button class="btn btn-default" (click)="onBack()">Back</button>
+
+</form>
+</div>
+
+

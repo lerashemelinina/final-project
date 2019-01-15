@@ -1,0 +1,32 @@
+C:\Users\lerapc\source\repos\Car RentProject\03_BLL\bin\Debug\03_BLL.dll.config
+C:\Users\lerapc\source\repos\Car RentProject\03_BLL\bin\Debug\03_BLL.dll
+C:\Users\lerapc\source\repos\Car RentProject\03_BLL\bin\Debug\03_BLL.pdb
+C:\Users\lerapc\source\repos\Car RentProject\03_BLL\bin\Debug\01_DAL.pdb
+C:\Users\lerapc\source\repos\Car RentProject\03_BLL\bin\Debug\01_DAL.dll.config
+C:\Users\lerapc\source\repos\Car RentProject\03_BLL\bin\Debug\02_BOL.pdb
+C:\Users\lerapc\source\repos\Car RentProject\03_BLL\bin\Debug\EntityFramework.xml
+C:\Users\lerapc\source\repos\Car RentProject\03_BLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\lerapc\source\repos\Car RentProject\03_BLL\obj\Debug\03_BLL.csprojResolveAssemblyReference.cache
+C:\Users\lerapc\source\repos\Car RentProject\03_BLL\obj\Debug\03_BLL.csproj.CoreCompileInputs.cache
+C:\Users\lerapc\source\repos\Car RentProject\03_BLL\obj\Debug\03_BLL.dll
+C:\Users\lerapc\source\repos\Car RentProject\03_BLL\obj\Debug\03_BLL.pdb
+C:\Users\lerapc\source\repos\Car RentProject\03_BLL\bin\Debug\01_DAL.dll
+C:\Users\lerapc\source\repos\Car RentProject\03_BLL\bin\Debug\02_BOL.dll
+C:\Users\lerapc\source\repos\Car RentProject\03_BLL\bin\Debug\EntityFramework.dll
+C:\Users\lerapc\source\repos\Car RentProject\03_BLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\lerapc\source\repos\CarRentProject\03_BLL\bin\Debug\03_BLL.dll.config
+C:\Users\lerapc\source\repos\CarRentProject\03_BLL\bin\Debug\03_BLL.dll
+C:\Users\lerapc\source\repos\CarRentProject\03_BLL\bin\Debug\03_BLL.pdb
+C:\Users\lerapc\source\repos\CarRentProject\03_BLL\bin\Debug\01_DAL.dll
+C:\Users\lerapc\source\repos\CarRentProject\03_BLL\bin\Debug\02_BOL.dll
+C:\Users\lerapc\source\repos\CarRentProject\03_BLL\bin\Debug\EntityFramework.dll
+C:\Users\lerapc\source\repos\CarRentProject\03_BLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\lerapc\source\repos\CarRentProject\03_BLL\bin\Debug\01_DAL.pdb
+C:\Users\lerapc\source\repos\CarRentProject\03_BLL\bin\Debug\01_DAL.dll.config
+C:\Users\lerapc\source\repos\CarRentProject\03_BLL\bin\Debug\02_BOL.pdb
+C:\Users\lerapc\source\repos\CarRentProject\03_BLL\bin\Debug\EntityFramework.xml
+C:\Users\lerapc\source\repos\CarRentProject\03_BLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\lerapc\source\repos\CarRentProject\03_BLL\obj\Debug\03_BLL.csprojResolveAssemblyReference.cache
+C:\Users\lerapc\source\repos\CarRentProject\03_BLL\obj\Debug\03_BLL.csproj.CoreCompileInputs.cache
+C:\Users\lerapc\source\repos\CarRentProject\03_BLL\obj\Debug\03_BLL.dll
+C:\Users\lerapc\source\repos\CarRentProject\03_BLL\obj\Debug\03_BLL.pdb

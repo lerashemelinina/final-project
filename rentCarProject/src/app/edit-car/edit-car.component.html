@@ -1,0 +1,37 @@
+<div class="container" *ngIf="localCar.CarType">
+
+  <div class="well well-lg" *ngIf="actionMsg">{{actionMsg}}</div>
+  
+  <div class="form-group"> 
+    <label>Car Make: {{localCar.CarType.Make}}</label> <br/>
+    <label>Car Model: {{localCar.CarType.Model}} - {{localCar.CarType.Year}}</label> <br/>
+    <label>Car Number: {{localCar.CarNumber}}</label>
+  </div>
+
+  <div class="form-group">
+      <label>Mileage:</label>
+      <input type="text" class="form-control" [(ngModel)]="localCar.Mileage">
+    </div>
+    <div class="form-group">
+      <label>Is for Rent:</label>
+      <input type="boolean" class="form-control"  [(ngModel)]="localCar.IsForRent">
+    </div>
+
+    <div class="form-group">
+      <label>Select a Branch:</label>
+      <select class="form-control" #branch [(ngModel)]="selectedBranch">
+        <!-- <option value="default">{{localCar.Branch}}</option> -->
+        <option *ngFor="let branch of allBranches.branchList" >{{branch.BranchName}}</option>
+      </select>
+      </div>
+
+    <div class="form-group">
+      <label>Image:</label>
+      <input type="text" class="form-control"  [(ngModel)]="localCar.Image">
+    </div>
+
+  <button class="btn btn-default" (click)="saveChanges()">Submit</button>
+  <button class="btn btn-default" (click)="onBack()">Back</button>
+
+</div>
+

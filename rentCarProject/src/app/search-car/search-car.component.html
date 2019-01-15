@@ -1,0 +1,86 @@
+<div class="container">
+  <form #form="ngForm" novalidate>
+
+    <div class="form-group" [class.has-error]="isSearchOptionError">
+      <label class="control-label">Search By:</label>
+      <select class="form-control"
+        required #searchOption
+        name="searchOption"
+        (blur)="validateSearchOption(searchOption.value)"
+        (change)="validateSearchOption(searchOption.value)">
+        <option value="default">Select search option</option>
+        <option *ngFor="let option of searchOptions">{{option}}</option>
+      </select>
+    </div>
+
+ 
+    <div class="form-group" *ngIf="selectedOption=='Make'" [class.has-error]="make.invalid&&make.touched">
+        <label>Choose a Make:</label>
+        <select class="form-control" 
+                required 
+                name="make"
+                #make="ngModel"
+                [(ngModel)]="selectedParam">
+          <option *ngFor="let make of makeList">{{make}}</option>
+        </select>
+      </div>
+
+
+    <div class="form-group" *ngIf="selectedOption=='Year'" [class.has-error]="year.invalid&&year.touched">
+        <label>Choose Year:</label>
+        <select class="form-control" 
+                required
+                name="year"
+                #year="ngModel"
+                [(ngModel)]="selectedParam">
+          <option *ngFor="let year of yearsList" >{{year}}</option>
+        </select>
+      </div>
+
+      
+      <div class="form-group" *ngIf="selectedOption=='Transmission'" [class.has-error]="transmission.invalid&&transmission.touched">
+        <label>Choose Transmission:</label>
+        <select class="form-control"
+                 required
+                 name="transmission"
+                 #transmission="ngModel"
+                 [(ngModel)]="selectedParam">
+          <option>Automatic</option>
+          <option>Non-Automatic</option>
+        </select>
+      </div>
+
+
+          <div class="form-group" [class.has-error]="startDate.invalid&&startDate.touched">
+              <label class="control-label">Select Start Date: </label><br/>
+              <input type="date" min="{{currentDate | date:'yyyy-MM-dd'}}" 
+                     class="form-control"  
+                     [(ngModel)]="startRent" required #startDate="ngModel"
+                     name="startDate">  
+           </div>
+
+           <div class="form-group" [class.has-error]="returnDate.invalid&&returnDate.touched">
+              <label>Select Return Date:</label><br/>
+              <input type="date" min="{{currentDate | date:'yyyy-MM-dd'}}"
+                     class="form-control" 
+                     [(ngModel)]="endRent" required #returnDate="ngModel"
+                     name="returnDate">
+           </div>
+
+
+      <button class="btn btn-default" (click)="onSubmit()"
+              [disabled]="form.invalid">Submit</button>
+             
+              
+
+      <button class="btn btn-default" (click)="onBack()">Back</button>
+
+    </form>    
+  </div>
+
+
+
+  
+   
+
+

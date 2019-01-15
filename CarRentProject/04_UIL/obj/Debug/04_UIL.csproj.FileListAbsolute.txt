@@ -1,0 +1,64 @@
+C:\Users\lerapc\source\repos\Car RentProject\04_UIL\bin\04_UIL.dll.config
+C:\Users\lerapc\source\repos\Car RentProject\04_UIL\bin\04_UIL.dll
+C:\Users\lerapc\source\repos\Car RentProject\04_UIL\bin\04_UIL.pdb
+C:\Users\lerapc\source\repos\Car RentProject\04_UIL\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\lerapc\source\repos\Car RentProject\04_UIL\bin\Newtonsoft.Json.dll
+C:\Users\lerapc\source\repos\Car RentProject\04_UIL\bin\System.Net.Http.Formatting.dll
+C:\Users\lerapc\source\repos\Car RentProject\04_UIL\bin\System.Web.Http.dll
+C:\Users\lerapc\source\repos\Car RentProject\04_UIL\bin\System.Web.Http.WebHost.dll
+C:\Users\lerapc\source\repos\Car RentProject\04_UIL\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\lerapc\source\repos\Car RentProject\04_UIL\bin\Newtonsoft.Json.xml
+C:\Users\lerapc\source\repos\Car RentProject\04_UIL\bin\System.Net.Http.Formatting.xml
+C:\Users\lerapc\source\repos\Car RentProject\04_UIL\bin\System.Web.Http.xml
+C:\Users\lerapc\source\repos\Car RentProject\04_UIL\bin\System.Web.Http.WebHost.xml
+C:\Users\lerapc\source\repos\Car RentProject\04_UIL\obj\Debug\04_UIL.csprojResolveAssemblyReference.cache
+C:\Users\lerapc\source\repos\Car RentProject\04_UIL\obj\Debug\04_UIL.csproj.CoreCompileInputs.cache
+C:\Users\lerapc\source\repos\Car RentProject\04_UIL\obj\Debug\04_UIL.dll
+C:\Users\lerapc\source\repos\Car RentProject\04_UIL\obj\Debug\04_UIL.pdb
+C:\Users\lerapc\source\repos\Car RentProject\04_UIL\bin\02_BOL.dll
+C:\Users\lerapc\source\repos\Car RentProject\04_UIL\bin\02_BOL.pdb
+C:\Users\lerapc\source\repos\Car RentProject\04_UIL\bin\03_BLL.dll
+C:\Users\lerapc\source\repos\Car RentProject\04_UIL\bin\EntityFramework.dll
+C:\Users\lerapc\source\repos\Car RentProject\04_UIL\bin\EntityFramework.SqlServer.dll
+C:\Users\lerapc\source\repos\Car RentProject\04_UIL\bin\01_DAL.dll
+C:\Users\lerapc\source\repos\Car RentProject\04_UIL\bin\03_BLL.pdb
+C:\Users\lerapc\source\repos\Car RentProject\04_UIL\bin\03_BLL.dll.config
+C:\Users\lerapc\source\repos\Car RentProject\04_UIL\bin\EntityFramework.xml
+C:\Users\lerapc\source\repos\Car RentProject\04_UIL\bin\EntityFramework.SqlServer.xml
+C:\Users\lerapc\source\repos\Car RentProject\04_UIL\bin\01_DAL.pdb
+C:\Users\lerapc\source\repos\Car RentProject\04_UIL\bin\01_DAL.dll.config
+C:\Users\lerapc\source\repos\Car RentProject\04_UIL\bin\System.Web.Cors.dll
+C:\Users\lerapc\source\repos\Car RentProject\04_UIL\bin\System.Web.Http.Cors.dll
+C:\Users\lerapc\source\repos\Car RentProject\04_UIL\bin\System.Web.Http.Cors.xml
+C:\Users\lerapc\source\repos\CarRentProject\04_UIL\bin\04_UIL.dll.config
+C:\Users\lerapc\source\repos\CarRentProject\04_UIL\bin\04_UIL.dll
+C:\Users\lerapc\source\repos\CarRentProject\04_UIL\bin\04_UIL.pdb
+C:\Users\lerapc\source\repos\CarRentProject\04_UIL\bin\02_BOL.dll
+C:\Users\lerapc\source\repos\CarRentProject\04_UIL\bin\03_BLL.dll
+C:\Users\lerapc\source\repos\CarRentProject\04_UIL\bin\EntityFramework.dll
+C:\Users\lerapc\source\repos\CarRentProject\04_UIL\bin\EntityFramework.SqlServer.dll
+C:\Users\lerapc\source\repos\CarRentProject\04_UIL\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\lerapc\source\repos\CarRentProject\04_UIL\bin\Newtonsoft.Json.dll
+C:\Users\lerapc\source\repos\CarRentProject\04_UIL\bin\System.Net.Http.Formatting.dll
+C:\Users\lerapc\source\repos\CarRentProject\04_UIL\bin\System.Web.Cors.dll
+C:\Users\lerapc\source\repos\CarRentProject\04_UIL\bin\System.Web.Http.Cors.dll
+C:\Users\lerapc\source\repos\CarRentProject\04_UIL\bin\System.Web.Http.dll
+C:\Users\lerapc\source\repos\CarRentProject\04_UIL\bin\System.Web.Http.WebHost.dll
+C:\Users\lerapc\source\repos\CarRentProject\04_UIL\bin\01_DAL.dll
+C:\Users\lerapc\source\repos\CarRentProject\04_UIL\bin\02_BOL.pdb
+C:\Users\lerapc\source\repos\CarRentProject\04_UIL\bin\03_BLL.pdb
+C:\Users\lerapc\source\repos\CarRentProject\04_UIL\bin\03_BLL.dll.config
+C:\Users\lerapc\source\repos\CarRentProject\04_UIL\bin\EntityFramework.xml
+C:\Users\lerapc\source\repos\CarRentProject\04_UIL\bin\EntityFramework.SqlServer.xml
+C:\Users\lerapc\source\repos\CarRentProject\04_UIL\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\lerapc\source\repos\CarRentProject\04_UIL\bin\System.Net.Http.Formatting.xml
+C:\Users\lerapc\source\repos\CarRentProject\04_UIL\bin\System.Web.Http.xml
+C:\Users\lerapc\source\repos\CarRentProject\04_UIL\bin\System.Web.Http.Cors.xml
+C:\Users\lerapc\source\repos\CarRentProject\04_UIL\bin\Newtonsoft.Json.xml
+C:\Users\lerapc\source\repos\CarRentProject\04_UIL\bin\System.Web.Http.WebHost.xml
+C:\Users\lerapc\source\repos\CarRentProject\04_UIL\bin\01_DAL.pdb
+C:\Users\lerapc\source\repos\CarRentProject\04_UIL\bin\01_DAL.dll.config
+C:\Users\lerapc\source\repos\CarRentProject\04_UIL\obj\Debug\04_UIL.csprojResolveAssemblyReference.cache
+C:\Users\lerapc\source\repos\CarRentProject\04_UIL\obj\Debug\04_UIL.csproj.CoreCompileInputs.cache
+C:\Users\lerapc\source\repos\CarRentProject\04_UIL\obj\Debug\04_UIL.dll
+C:\Users\lerapc\source\repos\CarRentProject\04_UIL\obj\Debug\04_UIL.pdb

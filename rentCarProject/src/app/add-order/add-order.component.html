@@ -1,0 +1,108 @@
+<div class="container">
+  <form #form="ngForm" novalidate>
+  
+  <div class="well well-lg" *ngIf="actionMsg">{{actionMsg}}</div>
+
+  <div class="form-group" [class.has-error]="startDate.invalid&&startDate.touched">
+      <label class="control-label">Start Date: </label>
+      <input type="date" min="{{currentDate | date:'yyyy-MM-dd'}}" 
+      class="form-control" placeholder="Enter a Start date" 
+      [(ngModel)]="newOrder.StartRent" required #startDate="ngModel"
+      name="startDate"
+      (change)="selectAvailableCars()">  
+    </div>
+
+
+  <div class="form-group" [class.has-error]="endDate.invalid&&endDate.touched">
+      <label class="control-label">End Date:</label>
+      <input type="date" min="{{newOrder.StartRent | date:'yyyy-MM-dd'}}" 
+      class="form-control" placeholder="Enter an End date" 
+      [(ngModel)]="newOrder.EndRent" required #endDate="ngModel"
+      name="endDate"
+      (change)="selectAvailableCars()"> 
+    </div>
+
+
+<div class="form-group" [class.has-error]="userNameError" *ngIf="userRole=='manager'||userRole=='employee'">
+      <label class="control-label">User Name:</label>
+        <select class="form-control" 
+          [(ngModel)]="selectedUser" required #userName
+          name="userName"
+          (blur)="validateUserName(userName.value)"
+          (change)="validateUserName(userName.value)">
+          <option value="default">Select a User</option>
+          <option *ngFor="let user of allUsers.userList" >{{user.UserName}}</option>
+        </select>
+    </div>
+
+
+<div class="form-group" [class.has-error]="userNameError" *ngIf="userRole=='customer'">
+      <label class="control-label">User Name:</label>
+        <select class="form-control" 
+          [(ngModel)]="selectedUser" required #userName
+          name="userName">
+          <option>{{selectedUser}}</option>
+        </select>
+    </div>
+
+
+    <div class="form-group" *ngIf="newOrder.StartRent&&newOrder.EndRent&&!selectedCar">
+      <h1>Our Available Cars:</h1>
+      <table class="table table-bordered">
+        <tr>
+           <th>Image</th>
+           <th>Car Type Info</th> 
+           <th>Branch Info</th>
+           <th>Car Number</th>
+           <th colspan="2">Make changes</th>
+        </tr>
+        
+        <tr *ngFor="let car of availableCars">
+            <td><img src="data:image/jpeg;base64,{{car.Image}}" height="100px" width="140px"></td>
+            <td>{{car.CarType.Make}}, {{car.CarType.Model}}, {{car.CarType.Year}}</td>
+            <td>{{car.Branch.BranchName}}, {{car.Branch.Adress}}</td>
+            <td>{{car.CarNumber}}</td>
+            <td><a class="btn btn-primary" (click)="selectCar(car.CarNumber)">Select Car</a></td>
+        </tr>
+      
+      </table>
+
+      </div>
+
+      <div class="form-group" *ngIf="selectedCar">
+        <table class="table table-bordered">
+          <tr>
+             <th>Image</th>
+             <th>Car Type Info</th> 
+             <th>Branch Info</th>
+             <th>Car Number</th>
+             <th colspan="2">Make changes</th>
+          </tr>
+          
+          <tr>
+              <td><img src="data:image/jpeg;base64,{{selectedCar.Image}}" height="100px" width="140px"></td>
+              <td>{{selectedCar.CarType.Make}}, {{selectedCar.CarType.Model}}, {{selectedCar.CarType.Year}}</td>
+              <td>{{selectedCar.Branch.BranchName}}, {{selectedCar.Branch.Adress}}</td>
+              <td>{{selectedCar.CarNumber}}</td>
+              <td><a class="btn btn-primary" (click)="selectCar(selectedCar.CarNumber)">Select Car</a></td>
+          </tr>
+        
+        </table>
+  
+        </div>
+
+      <button class="btn btn-default" (click)="onBack()">Back</button>
+
+    </form>
+
+    </div>
+ 
+
+
+    
+
+ 
+    
+
+  
+  

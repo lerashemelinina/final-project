@@ -1,0 +1,11 @@
+C:\Users\lerapc\source\repos\CarRentProject\01_DAL\bin\Debug\01_DAL.dll.config
+C:\Users\lerapc\source\repos\CarRentProject\01_DAL\bin\Debug\01_DAL.dll
+C:\Users\lerapc\source\repos\CarRentProject\01_DAL\bin\Debug\01_DAL.pdb
+C:\Users\lerapc\source\repos\CarRentProject\01_DAL\bin\Debug\EntityFramework.dll
+C:\Users\lerapc\source\repos\CarRentProject\01_DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\lerapc\source\repos\CarRentProject\01_DAL\bin\Debug\EntityFramework.xml
+C:\Users\lerapc\source\repos\CarRentProject\01_DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\lerapc\source\repos\CarRentProject\01_DAL\obj\Debug\01_DAL.csprojResolveAssemblyReference.cache
+C:\Users\lerapc\source\repos\CarRentProject\01_DAL\obj\Debug\01_DAL.csproj.CoreCompileInputs.cache
+C:\Users\lerapc\source\repos\CarRentProject\01_DAL\obj\Debug\01_DAL.dll
+C:\Users\lerapc\source\repos\CarRentProject\01_DAL\obj\Debug\01_DAL.pdb

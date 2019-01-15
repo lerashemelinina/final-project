@@ -1,0 +1,40 @@
+<div class="container" *ngIf="localOrder.User">
+  <div class="well well-lg" *ngIf="actionMsg">{{actionMsg}}</div>
+  
+  <div class="form-group"> 
+    <label>Car Number: {{localOrder.Car.CarNumber}}</label> <br/>
+    <label>Full Name: {{localOrder.User.FullName}}</label> <br/>
+  </div>
+
+  <div *ngIf="userRole=='manager'">
+  <div class="form-group">
+      <label>Start Rent:</label>
+      <input type="date" class="form-control" [(ngModel)]="localOrder.StartRent">
+    </div>
+    <div class="form-group">
+      <label>End Rent:</label>
+      <input type="date" class="form-control"  [(ngModel)]="localOrder.EndRent">
+    </div>
+  </div>
+
+  <div *ngIf="userRole=='employee'">
+      <div class="form-group">
+          <label>Start Rent: {{localOrder.StartRent|date: 'shortDate'}} </label> <br/>
+          <label>End Rent: {{localOrder.EndRent|date: 'shortDate'}}</label>
+        </div>
+  </div>
+
+    <div class="form-group">
+      <label>Return Date:</label>
+      <input type="date" class="form-control"  [(ngModel)]="localOrder.ReturnDate">
+    </div>
+
+  <div class="form-group" *ngIf="totalCost"> 
+      <label>Total Cost: {{totalCost | currency:'NIS '}}</label> <br/>
+    </div>
+
+  <button class="btn btn-default" (click)="saveChanges()">Submit</button>
+  <button class="btn btn-default" (click)="onBack()">Back</button>
+  <button class="btn btn-default" (click)="calculateTotalCost()">Calculate Total Cost</button>
+
+</div>
